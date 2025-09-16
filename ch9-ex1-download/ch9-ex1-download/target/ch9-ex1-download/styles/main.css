@@ -1,0 +1,126 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Toàn bộ trang */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    background-color: #f1f8f4;          /* nền xanh nhạt */
+    color: #333;
+    margin: 2em auto;
+    padding: 2em;
+    width: 500px;
+    border: 1px solid #a5d6a7;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+/* Tiêu đề */
+h1, h2 {
+    color: #2e7d32;                    /* xanh lá đậm */
+    margin-bottom: 0.8em;
+    font-weight: bold;
+}
+h1 {
+    font-size: 150%;
+    text-align: center;
+}
+h2 {
+    font-size: 120%;
+    border-bottom: 2px solid #81c784;
+    padding-bottom: 0.3em;
+}
+
+/* Nhãn */
+label {
+    float: left;
+    width: 8em;
+    margin-bottom: 0.7em;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* Input */
+input[type="text"],
+input[type="email"] {
+    width: 16em;
+    margin-left: 0.5em;
+    margin-bottom: 0.7em;
+    padding: 6px;
+    border: 1px solid #a5d6a7;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 6px rgba(46, 125, 50, 0.4);
+}
+
+/* Span hiển thị text */
+span {
+    margin-left: 0.5em;
+    margin-bottom: 0.7em;
+    color: #444;
+}
+
+/* Xuống dòng */
+br {
+    clear: both;
+}
+
+/* Bảng */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+th {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 0.7em;
+}
+td {
+    border: 1px solid #a5d6a7;
+    padding: 0.6em;
+}
+tr:nth-child(even) {
+    background-color: #e8f5e9;         /* hàng chẵn nền xanh nhạt */
+}
+
+/* Class phụ */
+.pad_top {
+    padding-top: 0.25em;
+}
+.margin_left {
+    margin-left: 0.5em;
+}
+.align_left {
+    text-align: left;
+}
+.align_right {
+    text-align: right;
+}
+
+/* Nút */
+input[type="submit"], button {
+    background: #4caf50;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input[type="submit"]:hover, button:hover {
+    background: #2e7d32;
+}
